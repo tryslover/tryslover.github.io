@@ -1,0 +1,181 @@
+*{
+  box-sizing: border-box
+  font-family: PingFangTC-regular, 微軟正黑體, Arial, sans-serif;
+}
+html, body, h1, h2, h3, h4, h5, h6, p, article, section, nav, div, span, profile, author, footer, header, right, left, content{
+    margin: 0;
+    padding: 0;
+}
+header, footer, .left, .right, footer, section, .profile, content, .author, article
+{
+ 
+} 
+.container, .container-fluid {
+    margin: 0 auto;
+    padding: 10px;
+    overflow: auto;
+
+}
+.container{
+    width: 900px;
+  
+}
+.container-fluid{
+  width: 100%;
+}
+
+body {
+  padding: 50px;
+}
+nav{
+  overflow:auto;
+  position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: royalblue;
+}
+nav ul{
+  margin: 0;
+  list-style-type: none;
+}
+nav li{
+  height: 50px;
+  width: 20%;
+  line-height: 50px;
+  float: left;
+}
+header{
+  background-image: url(https://source.unsplash.com/ktQuuihh3_w/800x600);
+  background-size: cover;
+  height: 450px;
+
+}
+h1{
+color:navy;
+font-size: 100px;
+font-weight: bold;
+text-align: center;
+padding-top: 100px;
+
+}
+p1{
+  color: navy;
+  font-size: 28px;
+  font-weight:bold;
+  padding-left: 150px;
+  line-height: 80px;
+}
+article{
+overflow: auto;
+text-align: center;
+}
+
+.left{
+  float:left;
+  width: calc(100%/ 10*4);
+  padding: 10px;
+}
+.left img {
+  width: 100%;
+  height: 250px;
+}
+
+.right{
+  float:right;
+  width: calc(100%/ 10*4);
+  padding: 10px;
+  position: relative;
+}
+.right img{
+  width: 100%;
+  height: 250px;
+}
+.right:after{
+  content: "";
+  display: block;
+  width: 95%;
+  height: 250px;
+  background:black;
+  position: absolute;
+  top: 28px;
+  left: 10px;
+  opacity: 0.5;
+}
+.right h1{
+  color:white;
+  position: absolute;
+  font-size: 76px;
+  top: -60px;
+  left: 80px;
+  z-index: 10;
+}
+.right h2{
+  color:white;
+  position: absolute;
+  font-size: 76px;
+  top:40px;
+  left: 80px;
+  z-index: 10;
+}
+.right:hover:after{
+  display:none;
+}
+.title{
+  color: navy;
+}
+
+.profile img{
+  border-radius: 50%;
+  height: 200px;
+  float: left;
+  padding-top: 20px;
+  margin-left: 375px;
+
+}
+ul{
+  list-style-type: none;
+  font-size: 26px;
+  font-weight: bold;
+  overflow: auto;
+  text-align: center;
+  color: navy;
+  line-height: 2;
+  content: "";
+  display: block;
+  clear: both;
+}
+li{
+  font-size:16px;
+}
+footer{
+  background-color:gainsboro; 
+  color: royalblue;
+  text-align: center;
+}
+@media screen and (max-width:768px)
+{
+  nav{
+    width: 100%
+  }
+  .container{
+    width: 750px
+  }
+  background-size{
+    max-width: 750px;
+  }
+}
+@media screen and (min-width:768px) 
+              and (max-width:992px)
+{
+  .container{
+    width: 50%
+  }
+}
+@media screen and (min-width:992px)
+              and (max-width: 1200px)
+{.container{
+  width: 100% 
+}
+}
+
